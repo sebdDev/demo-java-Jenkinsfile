@@ -14,6 +14,13 @@ pipeline {
             }
         }
 
+        stage('Fix javahome'){
+            steps{
+                sh 'echo "JAVA_HOME=${JAVA_HOME}"'
+            }
+        }
+
+
         stage('Build') {
             steps {
                 sh 'mvn clean compile'
