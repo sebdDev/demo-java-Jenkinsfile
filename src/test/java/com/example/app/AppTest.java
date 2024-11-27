@@ -35,8 +35,12 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    /**
+     * Rigourous false Test :-)
+     */
     public void testKO()
     {
-        fail("Ce test échoue intentionnellement.");
+        assertFalse("Ce test échoue intentionnellement.", true);
     }
 }
