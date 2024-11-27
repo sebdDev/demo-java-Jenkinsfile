@@ -33,6 +33,10 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( false );
+        assertTrue( true );
+    }
+    public void testKO()
+    {
+        fail("Ce test échoue intentionnellement.");
     }
 }
