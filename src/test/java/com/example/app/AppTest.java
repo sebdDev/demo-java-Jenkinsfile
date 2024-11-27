@@ -1,17 +1,23 @@
 package com.example.app;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-      public void testKO()
-    {
+public class AppTest {
+
+    /**
+     * Test qui réussit.
+     */
+    @Test
+    public void testApp() {
+        assertTrue("Ce test doit réussir", true);
+    }
+
+    /**
+     * Test qui échoue avec assertFalse.
+     */
+    @Test
+    public void testAssertFalse() {
         assertFalse("Ce test échoue intentionnellement.", true);
     }
 }
