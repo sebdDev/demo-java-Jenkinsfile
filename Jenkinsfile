@@ -13,12 +13,6 @@ pipeline {
             }
         }
 
-        stage('Fix javahome'){
-            steps{
-                sh 'echo "JAVA_HOME=${JAVA_HOME}"'
-            }
-        }
-
 
         stage('Build') {
             steps {
@@ -46,7 +40,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Exemple de déploiement (à adapter)
-                sh 'cp target/*.jar /path/to/deployment/directory/'
+                sh 'echo "Déploiement du projet"'
             }
         }
     }
