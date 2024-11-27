@@ -50,19 +50,21 @@ pipeline {
             archiveArtifacts artifacts: 'target/*.jar', 
                              fingerprint: true
             
-            emailext (
+            /*emailext (
                 subject: "Build Réussi: ${currentBuild.fullDisplayName}",
                 body: "Le build a été effectué avec succès.",
                 to: 'equipe@exemple.com'
-            )
+            )*/
+            echo '---------------------- Process REUSSI ----------------------'
         }
         
         failure {
-            emailext (
+            /*emailext (
                 subject: "Build Échoué: ${currentBuild.fullDisplayName}",
                 body: "Le build a échoué. Veuillez vérifier les logs.",
                 to: 'equipe@exemple.com'
-            )
+            )*/
+            echo '---------------------- Process KO --------------------------'
         }
     }
 }
