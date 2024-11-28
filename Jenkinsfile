@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main', 
-                    url: 'https://github.com/vanessakovalsky/demo-java.git'
+                    url: 'https://github.com/sebdDev/demo-java-Jenkinsfile.git'
             }
         }
 
