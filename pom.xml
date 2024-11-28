@@ -52,7 +52,7 @@
 		          <manifest>
 		            <addClasspath>true</addClasspath>
 		            <classpathPrefix>lib/</classpathPrefix>
-		            <mainClass>com.example.app</mainClass>
+		            <mainClass>com.example.App</mainClass>
 		          </manifest>
 		        </archive>
 		      </configuration>
