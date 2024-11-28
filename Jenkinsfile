@@ -38,6 +38,13 @@ pipeline {
             }
         }
 
+        stage('Run Application') {
+            steps {
+                // Exécute l'application avec Java (si besoin)
+                sh 'java -jar target/mon-application-java-1.0-SNAPSHOT.jar'
+            }
+        }
+
         stage('Deploy') {
             steps {
                 // Exemple de déploiement (à adapter)
